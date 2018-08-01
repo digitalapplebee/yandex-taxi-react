@@ -1,0 +1,33 @@
+.reason-text-label {
+  text-align: center;
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.reason-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 0 80px 0 80px;
+}
+
+.reason-text-grid-label {
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+}
+
+.reason-text-description {
+  text-align: center;
+  color: gray;
+}
+
+.reason-style-center {
+  text-align: center;
+}
+
+.reason-icon {
+  font-size: 52px;
+  color: yellow;
+  align-content: center;
+  text-align: center;
+}
