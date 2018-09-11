@@ -31,7 +31,7 @@ export default class App extends React.Component {
     return (
       // style={backgroundImageStyle}
       <div className="app-container">
-        <Favicon url={Favicon} />
+        <Favicon url="https://raw.githubusercontent.com/digitalapplebee/yandex-taxi-react/master/src/img/favicon.ico" />
         <Header style="margin: '0'" />
         <Content />
         <Reason />
