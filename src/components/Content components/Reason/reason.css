@@ -1,19 +1,36 @@
+.reason-container {
+  padding: 20px 20px;
+}
 .reason-text-label {
   text-align: center;
   font-size: 40px;
   font-weight: 400;
+  padding: 35px 50px;
+  letter-spacing: 2px;
 }
+
+.reason-container-reasons {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+}
+
 
 .reason-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin: 0 80px 0 80px;
+  margin: 0 70px 0 70px;
+  padding: 20px;
+}
+
+.reason-block {
+  padding: 5px;
 }
 
 .reason-text-grid-label {
   font-weight: 500;
-  font-size: 24px;
+  font-size: 22px;
   text-align: center;
+  padding: 18px;
 }
 
 .reason-text-description {

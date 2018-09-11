@@ -1,21 +1,34 @@
+.rates-container {
+  border-bottom: 1px white solid;
+}
+
 .rates-text-label {
   font-size: 48px;
   text-align: center;
-  /* margin:  */
 }
 
 .rates-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 30px;
-  margin: 0 80px 0 80px;
+  /* margin: 0 80px 0 80px; */
+  padding: 60px 100px;
   
 }
 
 .rates-table-label {
   background-color: rgba(0,0,0,.7);
-  font-size: 25px;
+  font-size: 24px;
   color: white;
   text-align: center;
-  padding: 20px;
+  padding: 18px;
+}
+
+.rates-container td {
+  font-size: 15px;
+  padding: 15px 0 15px 10px;
+}
+
+.rates-container tr:nth-child(even) {
+  background-color: rgb(97, 97, 97);
 }
