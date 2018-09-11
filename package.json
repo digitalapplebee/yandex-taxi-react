@@ -30,6 +30,7 @@
     "react": "^16.4.1",
     "react-custom-scrollbars": "^4.2.1",
     "react-dom": "^16.4.1",
+    "react-favicon": "0.0.14",
     "react-icons": "^3.0.1"
   }
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import Favicon from 'react-favicon';
 
 import Header from './components/Header'
 import Content from './components/Content'
@@ -9,6 +10,8 @@ import Requriments from './components/Content components/Requirements/Requiremen
 import Footer from './components/Footer'
 
 import Background from './img/minsk.jpg'
+
+//import Favicon from './img/favicon.ico'
 
 import 'normalize.css'
 import './app.css'
@@ -28,6 +31,7 @@ export default class App extends React.Component {
     return (
       // style={backgroundImageStyle}
       <div className="app-container">
+        <Favicon url={Favicon} />
         <Header style="margin: '0'" />
         <Content />
         <Reason />
