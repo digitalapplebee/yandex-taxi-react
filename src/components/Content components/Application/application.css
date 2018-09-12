@@ -1,0 +1,55 @@
+.application-container {
+  padding-bottom: 200px;
+  border-bottom: 1px gray solid;
+}
+
+.application-container img {
+  width: 300px;
+}
+
+.application-label {
+  font-size: 48px;
+  text-align: center;
+  padding: 120px 80px;
+}
+
+.application-grid {
+  display: grid;
+  grid-template-columns: 1fr 300px 1fr;
+  grid-gap: 50px;
+  margin: 0 50px 0 50px;
+}
+
+.application-grid-block {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  padding: 50px;
+  /* width: 300px; */
+  margin-top: 100px;
+}
+
+.application-grid-block-label {
+  font-size: 18px;
+  text-align: center;
+  padding: 20px;
+}
+
+.application-grid-block-description {
+  color: gray;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* react icons */
+
+.application-icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.application-icon {
+  font-size: 35px;
+  color: orange;
+  
+}
