@@ -2,25 +2,28 @@ import React from 'react'
 
 import './header.css'
 
+//icons
+import { FaVk, FaFacebookF, FaTwitter } from 'react-icons/fa'
+
 export default class Header extends React.Component {
   render() {
     return (
       <div className="header-container">
         <p className="header-logo">
           <span className="header-logo-yandex">
-            <span className="header-logo-y">Y</span>andex 
+            <span className="header-logo-y">Y</span>andex
           </span>
-          <span>&nbsp; Taxi</span>
+          <span>&nbsp;Taxi</span>
         </p>
         <nav className="inline">
           <ul>
             <li><a href="#">ПОЧЕМУ ЯНДЕСК.ТАКСИ?</a></li>
             <li><a href="#">ТАРИФЫ</a></li>
-            <li><a href="#">ПРИЛОЖЕНИЕ</a></li>
+            <li><a href="#application">ПРИЛОЖЕНИЕ</a></li>
             <li><a href="#">ПОДКЛЮЧИТЬСЯ</a></li>
-            <li><a href="#">VK</a></li>
-            <li><a href="#">F</a></li>
-            <li><a href="#">Twitter</a></li>
+            <li><a href="#"><FaVk /></a></li>
+            <li><a href="#"><FaFacebookF /></a></li>
+            <li><a href="#"><FaTwitter /></a></li>
           </ul>
         </nav>
       </div>

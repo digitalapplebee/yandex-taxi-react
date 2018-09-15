@@ -1,6 +1,6 @@
 import React from 'react'
 
-import car from '../img/car.png'
+import car from '../../img/car.png'
 
 import './content.css'
 
@@ -24,7 +24,8 @@ export default class Content extends React.Component {
         </div>
         
         <p className="content-text-calling">или звоните</p>
-        <p className="content-text-number">+375 (44) 588-50-00</p>
+        
+        <a href="tel:+375333766580" className="content-text-number">+375 (33) 376-65-80</a>
         <img className="content-img-car" src={car} alt="Yandex Car"/>
       </div>
     )

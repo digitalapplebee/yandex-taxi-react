@@ -30,5 +30,5 @@
 }
 
 .rates-container tr:nth-child(even) {
-  background-color: rgb(97, 97, 97);
+  background-color: #dcdcdc;
 }

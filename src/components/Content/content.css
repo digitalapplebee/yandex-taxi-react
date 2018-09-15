@@ -20,7 +20,7 @@
   width: 400px;
 }
 
-.content-submit-form > input[type=text]::placeholder {
+.content-submit-form input[type=text]::placeholder {
   color: rgb(168, 168, 168);
   font-size: 0.80em;
   padding-left: 7px;
@@ -47,8 +47,28 @@
   font-size: 36px;
   color: rgb(255, 255, 70);
   text-align: center;
+  animation: redNumber;
+  font-weight: 600;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* text-decoration-line: none; */
 }
 
+.content-text-number:hover {
+  color: #e61400;
+  animation-name: redNumber;
+  animation-duration: 1s;
+  cursor: pointer;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited{
+  color:black;
+}
 .content-button-submit {
   font-weight: 500;
   background: rgb(255, 255, 70);
@@ -56,6 +76,7 @@
   width: 200px;
   height: 44px;
   border-radius: 22px;
+  cursor: pointer;
 }
 
 .content-img-car {

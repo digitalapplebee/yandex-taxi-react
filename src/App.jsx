@@ -1,13 +1,13 @@
 import React from 'react'
 import Favicon from 'react-favicon';
 
-import Header from './components/Header'
-import Content from './components/Content'
+import Header from './components/Header/Header'
+import Content from './components/Content/Content'
 import Reason from './components/Content components/Reason/Reason'
 import Rates from './components/Content components/Rates/Rates'
 import Application from './components/Content components/Application/Application'
 import Requriments from './components/Content components/Requirements/Requirements'
-import Footer from './components/Footer'
+import Footer from './components/Content components/Footer/Footer'
 
 import Background from './img/minsk.jpg'
 
