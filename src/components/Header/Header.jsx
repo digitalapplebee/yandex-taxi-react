@@ -1,8 +1,9 @@
 import React from 'react'
 
+// css
 import './header.css'
 
-//icons
+// icons
 import { FaVk, FaFacebookF, FaTwitter } from 'react-icons/fa'
 
 export default class Header extends React.Component {
@@ -15,7 +16,7 @@ export default class Header extends React.Component {
           </span>
           <span>&nbsp;Taxi</span>
         </p>
-        <nav className="inline">
+        <nav className="header-nav">
           <ul>
             <li><a href="#">ПОЧЕМУ ЯНДЕСК.ТАКСИ?</a></li>
             <li><a href="#">ТАРИФЫ</a></li>

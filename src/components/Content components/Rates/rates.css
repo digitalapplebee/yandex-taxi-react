@@ -13,11 +13,11 @@
   grid-gap: 30px;
   /* margin: 0 80px 0 80px; */
   padding: 60px 100px;
-  
+
 }
 
 .rates-table-label {
-  background-color: rgba(0,0,0,.7);
+  background-color: rgba(0, 0, 0, .7);
   font-size: 24px;
   color: white;
   text-align: center;
@@ -31,4 +31,19 @@
 
 .rates-container tr:nth-child(even) {
   background-color: #dcdcdc;
+}
+
+.rates-container table {
+  width: 100%;
+}
+
+.rates-container table,
+td,
+th {
+  border-collapse: collapse;
+}
+
+td:first-child {
+  max-width: 120px;
+  padding-right: 80px;
 }

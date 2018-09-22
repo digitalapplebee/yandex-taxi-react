@@ -1,10 +1,15 @@
 .header-container {
   color: white;
   height: 80px;
-  /* position: fixed; */
+
+  top: 0;
+  left: 0;
+  position: fixed;
+
   display: flex;
   border-bottom: 0.05em solid rgba(128, 128, 128, 0.8);
   font-size: 13px;
+  width: 100%;
 }
 
 .header-container li {
@@ -18,7 +23,8 @@
   display: inline-block;
 }
 
-.inline {
+.header-nav {
+  padding-left: 200px;
   display: inline;
 }
 
@@ -45,4 +51,10 @@
 
 .header-logo-y {
   color: red;
+}
+
+.header-container nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
