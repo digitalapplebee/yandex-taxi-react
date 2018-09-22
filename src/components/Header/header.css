@@ -1,10 +1,9 @@
 .header-container {
-  color: white;
   height: 80px;
 
+  position: fixed;
   top: 0;
   left: 0;
-  position: fixed;
 
   display: flex;
   border-bottom: 0.05em solid rgba(128, 128, 128, 0.8);
@@ -12,49 +11,70 @@
   width: 100%;
 }
 
-.header-container li {
-  display: inline;
-  margin: 15px 15px 15px 15px;
-}
+.header-container-scrolled {
+  height: 60px; 
+  background-color: black;
 
-.header-container ul {
-  margin: 0;
-  padding: 0;
-  display: inline-block;
-}
+  position: fixed;
+  top: 0;
+  left: 0;
 
-.header-nav {
-  padding-left: 200px;
-  display: inline;
-}
+  display: flex;
 
+  font-size: 13px;
+  width: 100%;
+}
+/* ***************************************************** */
+
+
+/* logotype */
 .header-logo {
   width: 200px;
-  display: inline-block;
-  /* margin-top: 20px; */
   display: flex;
   justify-content: center;
   align-items: center;
-  /* justify-content: first baseline; */
   font-size: 26px;
   margin-left: 40px;
-}
-
-.header-container a {
-  color: #dcdcdc;
-  text-decoration: none;
-}
-
-.header-logo-yandex{
-  font-weight: 700;
 }
 
 .header-logo-y {
   color: red;
 }
 
+.header-logo-yandex{
+  color: white;
+  font-weight: 700;
+}
+
+.header-logo-taxi {
+  color: white;
+}
+/* ****************************************************** */
+
+.header-container li  {
+  display: inline;
+  margin: 15px 15px 15px 15px;
+}
+
+/* test */
+.header-container li.scrolled {
+  display: inline;
+  margin: 15px 15px 15px 15px;
+}
+
+.header-nav {
+  padding-left: 200px;
+}
+
+.header-container a:visited {
+  color: white;
+}
+
+
+/* center navigation */
 .header-container nav {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+/* ****************************************************** */
