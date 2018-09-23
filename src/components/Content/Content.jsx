@@ -5,6 +5,23 @@ import car from '../../img/car.png'
 
 import './content.css'
 
+import Background from '../../img/minsk.jpg'
+
+const backgroundImageStyle = {
+  backgroundImage: `url(${Background})`,
+  width: '100%',
+  height: '50%',
+  backgroundRepeat: 'no-repeat',
+  backgroundSize: 'cover',
+  backgroundPosition: 'center',
+  // filter: 'brightness(50%)',
+
+  // position: 'absolute',
+  // top: '-20px',
+  // filter: 'blur(1px)',
+  // zIndex: '-5',
+};
+
 export default class Content extends React.Component {
   constructor(props) {
     super(props)
@@ -45,7 +62,7 @@ export default class Content extends React.Component {
 
   render() {
     return (
-      <div className="content-container">
+      <div className="content-container" style={backgroundImageStyle}>
 
         <p className="content-text">Приглашаем водителей на автомобили организации для работы в Яндекс.Такси</p>
 

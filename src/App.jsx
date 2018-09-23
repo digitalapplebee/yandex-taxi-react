@@ -9,30 +9,16 @@ import Application from './components/Content components/Application/Application
 import Requriments from './components/Content components/Requirements/Requirements'
 import Footer from './components/Content components/Footer/Footer'
 
-import Background from './img/minsk.jpg'
-
-//import Favicon from './img/favicon.ico'
-
 import 'normalize.css'
 import './app.css'
-
-const backgroundImageStyle = {
-  backgroundImage: `url(${Background})`,
-  width: '100%',
-  height: '80%',
-  backgroundRepeat: 'no-repeat',
-  filter: 'brightness(50%)',
-  // backgroundSize: 'cover',
-  // filter: 'blur(1px)',
-};
 
 export default class App extends React.Component {
   render() {
     return (
-      // style={backgroundImageStyle}
-      <div className="app-container">
+      // className="app-container"
+      <div style={{zIndex: "5"}} >
         <Favicon url="https://raw.githubusercontent.com/digitalapplebee/yandex-taxi-react/master/src/img/favicon.ico" />
-        <Header style="margin: '0'" />
+        <Header />
         <Content />
         <Reason />
         <Rates />
