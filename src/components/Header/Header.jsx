@@ -5,6 +5,8 @@ import './header.css'
 
 // icons
 import { FaVk, FaFacebookF, FaTwitter } from 'react-icons/fa'
+import { goToTop } from 'react-scrollable-anchor';
+import ScrollableAnchor from 'react-scrollable-anchor/lib/ScrollableAnchor';
 
 export default class Header extends React.Component {
   constructor(props) {
@@ -33,21 +35,25 @@ export default class Header extends React.Component {
   }
 
   render() {
+
     return (
       // <div className="header-container">
       <div className={`${this.state.scrolling ? 'header-container-scrolled' : 'header-container'}`}>
-        <p className="header-logo">
-          <span className="header-logo-yandex">
-            <span className="header-logo-y">Y</span>andex
+        <ScrollableAnchor id={'home'}>
+          <p className="header-logo">
+            <span className="header-logo-yandex">
+              <span className="header-logo-y">Y</span>andex
           </span>
-          <span className="header-logo-taxi">&nbsp;Taxi</span>
-        </p>
+            <span className="header-logo-taxi">&nbsp;Taxi</span>
+          </p>
+        </ScrollableAnchor>
+        {/* </div> */}
         <nav className="header-nav">
           <ul>
-            <li><a href="#">ПОЧЕМУ ЯНДЕСК.ТАКСИ?</a></li>
-            <li><a href="#">ТАРИФЫ</a></li>
+            <li><a href="#reason">ПОЧЕМУ ЯНДЕСК.ТАКСИ?</a></li>
+            <li><a href="#rates">ТАРИФЫ</a></li>
             <li><a href="#application">ПРИЛОЖЕНИЕ</a></li>
-            <li><a href="#">ПОДКЛЮЧИТЬСЯ</a></li>
+            <li><a href="#requirements">ПОДКЛЮЧИТЬСЯ</a></li>
             <li><a href="#"><FaVk /></a></li>
             <li><a href="#"><FaFacebookF /></a></li>
             <li><a href="#"><FaTwitter /></a></li>

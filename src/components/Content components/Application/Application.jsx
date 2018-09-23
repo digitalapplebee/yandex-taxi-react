@@ -9,11 +9,16 @@ import { FaListAlt } from 'react-icons/fa'
 import { FaRedoAlt } from 'react-icons/fa'
 import { FaHandshake } from 'react-icons/fa'
 
+import ScrollableAnchor from 'react-scrollable-anchor'
+
 export default class Application extends React.Component {
+  
   render() {
     return (
       <div className="application-container">
-        <p id="#application" className="application-label text-center">Приложение</p>
+        <ScrollableAnchor id={'application'}>
+          <p id="#application" className="application-label text-center">Приложение</p>
+        </ScrollableAnchor>
         <div className="application-grid">
           <div className="application-grid-block">
             <div>

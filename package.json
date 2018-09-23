@@ -25,12 +25,14 @@
     "webpack-dev-server": "^3.1.4"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "babel-preset-env": "^1.7.0",
     "normalize.css": "^8.0.0",
     "react": "^16.4.1",
     "react-custom-scrollbars": "^4.2.1",
     "react-dom": "^16.4.1",
     "react-favicon": "0.0.14",
-    "react-icons": "^3.0.1"
+    "react-icons": "^3.0.1",
+    "react-scrollable-anchor": "^0.6.1"
   }
 }

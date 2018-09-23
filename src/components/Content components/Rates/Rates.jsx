@@ -2,11 +2,20 @@ import React from 'react'
 
 import '../Rates/rates.css'
 
+import ScrollableAnchor, {configureAnchors} from 'react-scrollable-anchor'
+
 export default class Rates extends React.Component {
+
+  componentWillMount() {
+    configureAnchors({ offset: -80, scrollDuration: 100 })
+  }
+
   render() {
     return (
       <div className="rates-container">
-        <p className="rates-text-label">Тарифы</p>
+        <ScrollableAnchor id={'rates'}>
+          <p className="rates-text-label">Тарифы</p>
+        </ScrollableAnchor>
         <div className="rates-grid">
           <div>
             <p className="rates-table-label">Эконом</p>
