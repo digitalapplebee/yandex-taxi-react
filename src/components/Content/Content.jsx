@@ -10,8 +10,8 @@ import Background from '../../img/minsk.jpg'
 const backgroundImageStyle = {
   backgroundImage: `url(${Background})`,
   width: '100%',
-  height: '50%',
-  backgroundRepeat: 'no-repeat',
+  height: '750px',
+  // backgroundRepeat: 'no-repeat',
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   // filter: 'brightness(50%)',
@@ -19,7 +19,7 @@ const backgroundImageStyle = {
   // position: 'absolute',
   // top: '-20px',
   // filter: 'blur(1px)',
-  // zIndex: '-5',
+  zIndex: '-3',
 };
 
 export default class Content extends React.Component {

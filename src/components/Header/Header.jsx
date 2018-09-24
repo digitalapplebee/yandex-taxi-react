@@ -5,6 +5,7 @@ import './header.css'
 
 // icons
 import { FaVk, FaFacebookF, FaTwitter } from 'react-icons/fa'
+
 import { goToTop } from 'react-scrollable-anchor';
 import ScrollableAnchor from 'react-scrollable-anchor/lib/ScrollableAnchor';
 
@@ -48,15 +49,15 @@ export default class Header extends React.Component {
           </p>
         </ScrollableAnchor>
         {/* </div> */}
-        <nav className="header-nav">
+        <nav className={`${this.state.scrolling ? 'nav-scrolled' : 'header-nav'}`}>
           <ul>
-            <li><a href="#reason">ПОЧЕМУ ЯНДЕСК.ТАКСИ?</a></li>
-            <li><a href="#rates">ТАРИФЫ</a></li>
-            <li><a href="#application">ПРИЛОЖЕНИЕ</a></li>
-            <li><a href="#requirements">ПОДКЛЮЧИТЬСЯ</a></li>
-            <li><a href="#"><FaVk /></a></li>
-            <li><a href="#"><FaFacebookF /></a></li>
-            <li><a href="#"><FaTwitter /></a></li>
+            <li className={`${this.state.scrolling ? 'li-scrolled': ''}`}><a href="#reason">ПОЧЕМУ ЯНДЕСК.ТАКСИ?</a></li>
+            <li className={`${this.state.scrolling ? 'li-scrolled': ''}`}><a href="#rates">ТАРИФЫ</a></li>
+            <li className={`${this.state.scrolling ? 'li-scrolled': ''}`}><a href="#application">ПРИЛОЖЕНИЕ</a></li>
+            <li className={`${this.state.scrolling ? 'li-scrolled': ''}`}><a href="#requirements">ПОДКЛЮЧИТЬСЯ</a></li>
+            <li className={`${this.state.scrolling ? 'li-scrolled': ''}`}><a href="#"><FaVk /></a></li>
+            <li className={`${this.state.scrolling ? 'li-scrolled': ''}`}><a href="#"><FaFacebookF /></a></li>
+            <li className={`${this.state.scrolling ? 'li-scrolled': ''}`}><a href="#"><FaTwitter /></a></li>
           </ul>
         </nav>
       </div>

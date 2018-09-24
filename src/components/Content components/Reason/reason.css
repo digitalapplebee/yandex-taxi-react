@@ -1,5 +1,5 @@
 .reason-container {
-  margin-top: 120px;
+  margin-top: 160px;
   padding: 20px 20px;
 }
 .reason-text-label {
@@ -45,7 +45,7 @@
 
 .reason-icon {
   font-size: 52px;
-  color: yellow;
+  color: #ffcf29;
   align-content: center;
   text-align: center;
 }
