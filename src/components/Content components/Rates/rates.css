@@ -1,5 +1,7 @@
 .rates-container {
   border-bottom: 1px white solid;
+  color: #707070;
+  
 }
 
 .rates-text-label {
@@ -30,20 +32,29 @@
 }
 
 .rates-container tr:nth-child(even) {
-  background-color: #dcdcdc;
+  background-color: #dcdcdc7c;
 }
 
 .rates-container table {
   width: 100%;
+  /* height: 100%; */
 }
 
 .rates-container table,
 td,
 th {
   border-collapse: collapse;
+  /* height: 100%; */
 }
 
 td:first-child {
-  max-width: 120px;
+  max-width: 110px;
   padding-right: 80px;
+  height: 100%;
+}
+
+.rates-container-table tbody {
+  height: 100%;
+  border: 0.01em solid #70707041;
+  /* width: 100%; */
 }

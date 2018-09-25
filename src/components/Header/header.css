@@ -1,10 +1,8 @@
 .header-container {
-  height: 80px;
+  height: 85px;
 
   position: fixed;
-  top: 0;
-  left: 0;
-
+ /* right: 50px; */
   display: flex;
   border-bottom: 0.05em solid rgba(128, 128, 128, 0.8);
   font-size: 13px;
@@ -66,8 +64,27 @@
 
 /* ****************************************************** */
 
+ul {
+  /* position: relative; */
+  position: absolute;
+  right: 50px;
+  height: 100%;
+  
+
+}
+
+li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100%; */
+}
+
 .header-nav {
-  padding-left: 300px;
+  /* padding-left: 300px;
+   */
+   /* position: absolute; */
+   /* right: 50px; */
 }
 
 .header-container a:visited {

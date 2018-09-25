@@ -17,7 +17,7 @@ export default class Rates extends React.Component {
           <p className="rates-text-label">Тарифы</p>
         </ScrollableAnchor>
         <div className="rates-grid">
-          <div>
+          <div className="rates-container-table">
             <p className="rates-table-label">Эконом</p>
             <table>
               <tbody>
@@ -41,7 +41,7 @@ export default class Rates extends React.Component {
             </table>
           </div>
 
-          <div>
+          <div className="rates-container-table">
             <p className="rates-table-label">Комфорт</p>
             <table>
               <tbody>
