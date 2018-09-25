@@ -2,12 +2,13 @@
   height: 85px;
 
   position: fixed;
- /* right: 50px; */
   display: flex;
+
   border-bottom: 0.05em solid rgba(128, 128, 128, 0.8);
   font-size: 13px;
   width: 100%;
   transition: all 0.3s ease-out;
+  
 }
 
 .header-container-scrolled {
@@ -15,9 +16,6 @@
   background-color: black;
 
   position: fixed;
-  top: 0;
-  left: 0;
-
   display: flex;
 
   font-size: 13px;
@@ -64,25 +62,27 @@
 
 /* ****************************************************** */
 
-ul {
+.ul-t {
   /* position: relative; */
   position: absolute;
-  right: 50px;
+  right: 170px;
   height: 100%;
-}
-
-li {
+  margin-block-start: 0;
+  margin-block-end: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* height: 100%; */
 }
 
-.header-nav {
-  /* padding-left: 300px;
-   */
-   /* position: absolute; */
-   /* right: 50px; */
+.ul-scrolled {
+  position: absolute;
+  right: 170px;
+  height: 100%;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .header-container a:visited {

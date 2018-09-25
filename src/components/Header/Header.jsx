@@ -50,7 +50,7 @@ export default class Header extends React.Component {
         </ScrollableAnchor>
         {/* </div> */}
         <nav className={`${this.state.scrolling ? 'nav-scrolled' : 'header-nav'}`}>
-          <ul>
+          <ul className={`${this.state.scrolling ? 'ul-t' : 'ul-scrolled'}`}>
             <li className={`${this.state.scrolling ? 'li-scrolled': ''}`}><a href="#reason">ПОЧЕМУ ЯНДЕСК.ТАКСИ?</a></li>
             <li className={`${this.state.scrolling ? 'li-scrolled': ''}`}><a href="#rates">ТАРИФЫ</a></li>
             <li className={`${this.state.scrolling ? 'li-scrolled': ''}`}><a href="#application">ПРИЛОЖЕНИЕ</a></li>

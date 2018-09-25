@@ -1,7 +1,8 @@
 .reason-container {
-  margin-top: 160px;
+  margin-top: 260px;
   padding: 20px 20px;
 }
+
 .reason-text-label {
   text-align: center;
   font-size: 40px;
@@ -12,7 +13,6 @@
 
 .reason-container-reasons {
   display: grid;
-  /* grid-template-columns: 1fr 1fr 1fr 1fr; */
 }
 
 
