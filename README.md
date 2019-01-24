@@ -10,6 +10,5 @@
 
 * `git clone git@github.com:digitalapplebee/yandex-taxi-react.git`
 * cd yandex-taxi-react
-* npm install
-* npm start
+* ```yarn && yarn start```
 * visit `http://localhost:8080/`
