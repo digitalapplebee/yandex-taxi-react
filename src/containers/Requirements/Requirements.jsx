@@ -1,4 +1,5 @@
 import React from 'react'
+import TitleContainer from '../../components/TitleContainer'
 import CarTop from '../../img/car-top.png'
 import { FaCheck } from 'react-icons/fa'
 import ScrollableAnchor, { goToAnchor, configureAnchors, goToTop } from 'react-scrollable-anchor'
@@ -37,7 +38,7 @@ export default class Requirements extends React.Component {
       <div className="requirements-container">
         <div>
           <ScrollableAnchor id={'requirements'}>
-            <p className="requirements-label">Условия работы и требования</p>
+            <TitleContainer title="Условия работы и требования" />
           </ScrollableAnchor>
           <div className="requirements-list-block">
             <ul>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-
+import TitleContainer from '../../components/TitleContainer'
 import './application.css'
 
 import ApplicationImg from '../../img/phone.png'
@@ -16,7 +16,8 @@ export default class Application extends Component {
     return (
       <div className="application-container">
         <ScrollableAnchor id={'application'}>
-          <p id="#application" className="application-label text-center">Приложение</p>
+          {/* <p id="#application" className="application-label text-center">Приложение</p> */}
+          <TitleContainer title="Приложение" />
         </ScrollableAnchor>
         <div className="application-grid">
           <div className="application-grid-block">

@@ -1,5 +1,5 @@
 import React from 'react'
-
+import TitleContainer from '../../components/TitleContainer'
 import { MdWallpaper } from 'react-icons/md'
 import { IoIosPeople } from 'react-icons/io'
 import { IoIosAirplane } from 'react-icons/io'
@@ -19,7 +19,7 @@ export default class Reason extends React.Component {
     return (
       <div className="reason-container">
         <ScrollableAnchor id={'reason'}>
-          <p className="reason-text-label">Почему Яндекс.Такси?</p>
+          <TitleContainer title="Почему Яндекс.Такси?" />
         </ScrollableAnchor>
         <div className="reason-grid">
           <div className="reason-block">

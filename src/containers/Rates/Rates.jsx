@@ -1,4 +1,5 @@
 import React from 'react'
+import TitleContainer from '../../components/TitleContainer'
 
 import '../Rates/rates.css'
 
@@ -14,7 +15,7 @@ export default class Rates extends React.Component {
     return (
       <div className="rates-container">
         <ScrollableAnchor id={'rates'}>
-          <p className="rates-text-label">Тарифы</p>
+          <TitleContainer title="Тарифы" />
         </ScrollableAnchor>
         <div className="rates-grid">
           <div className="rates-container-table">
