@@ -1,21 +1,20 @@
-import React from 'react'
+import React, { Fragment, PureComponent } from 'react'
 import Favicon from 'react-favicon';
-
 import Header from './components/Header/Header'
-import Content from './components/Content/Content'
-import Reason from './components/Content components/Reason/Reason'
-import Rates from './components/Content components/Rates/Rates'
-import Application from './components/Content components/Application/Application'
-import Requriments from './components/Content components/Requirements/Requirements'
-import Footer from './components/Content components/Footer/Footer'
+import Content from './containers/Content/Content'
+import Reason from './containers/Reason/Reason'
+import Rates from './containers/Rates/Rates'
+import Application from './containers/Application/Application'
+import Requriments from './containers/Requirements/Requirements'
+import Footer from './components/Footer'
 
 import 'normalize.css'
 import './app.css'
 
-export default class App extends React.Component {
+export default class App extends PureComponent {
   render() {
     return (
-      <div style={{zIndex: "5"}} >
+      <Fragment>
         <Favicon url="https://raw.githubusercontent.com/digitalapplebee/yandex-taxi-react/master/src/img/favicon.ico" />
         <Header />
         <Content />
@@ -24,7 +23,7 @@ export default class App extends React.Component {
         <Application />
         <Requriments />
         <Footer />
-      </div>
+      </Fragment>
     )
   }
 }

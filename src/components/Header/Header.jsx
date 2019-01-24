@@ -1,15 +1,11 @@
-import React from 'react'
-
-// css
-import './header.css'
-
-// icons
-import { FaVk, FaFacebookF, FaTwitter } from 'react-icons/fa'
-
+import React, { Component } from 'react'
 import { goToTop } from 'react-scrollable-anchor';
 import ScrollableAnchor from 'react-scrollable-anchor/lib/ScrollableAnchor';
+import { FaVk, FaFacebookF, FaTwitter } from 'react-icons/fa'
 
-export default class Header extends React.Component {
+import './header.css'
+
+export default class Header extends Component {
   constructor(props) {
     super(props)
     this.state = {
@@ -36,9 +32,7 @@ export default class Header extends React.Component {
   }
 
   render() {
-
     return (
-      // <div className="header-container">
       <div className={`${this.state.scrolling ? 'header-container-scrolled' : 'header-container'}`}>
         <ScrollableAnchor id={'home'}>
           <p className="header-logo">
@@ -48,7 +42,6 @@ export default class Header extends React.Component {
             <span className="header-logo-taxi">&nbsp;Taxi</span>
           </p>
         </ScrollableAnchor>
-        {/* </div> */}
         <nav className={`${this.state.scrolling ? 'nav-scrolled' : 'header-nav'}`}>
           <ul className={`${this.state.scrolling ? 'ul-t' : 'ul-scrolled'}`}>
             <li className={`${this.state.scrolling ? 'li-scrolled': ''}`}><a href="#reason">ПОЧЕМУ ЯНДЕСК.ТАКСИ?</a></li>

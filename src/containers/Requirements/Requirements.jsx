@@ -1,14 +1,33 @@
 import React from 'react'
-
+import CarTop from '../../img/car-top.png'
+import { FaCheck } from 'react-icons/fa'
+import ScrollableAnchor, { goToAnchor, configureAnchors, goToTop } from 'react-scrollable-anchor'
 import './requirements.css'
 
-import Car2 from '../../../img/car-2.png'
-import { FaCheck } from 'react-icons/fa'
-
-import ScrollableAnchor, { goToAnchor, configureAnchors, goToTop } from 'react-scrollable-anchor'
+const items = [
+  {
+    id: 1,
+    title: 'Возраст от 21 года',
+  },
+  {
+    id: 2,
+    title: 'Стаж В/У от 3 лет',
+  },
+  {
+    id: 3,
+    title: 'Страховка пассажиров',
+  },
+  {
+    id: 4,
+    title: 'Страховка от 2003 года',
+  },
+  {
+    id: 5,
+    title: 'Смартфон на Android',
+  },
+]
 
 export default class Requirements extends React.Component {
-
   componentWillMount() {
     configureAnchors({ offset: -80, scrollDuration: 800 })
   }
@@ -22,17 +41,12 @@ export default class Requirements extends React.Component {
           </ScrollableAnchor>
           <div className="requirements-list-block">
             <ul>
-              <li><FaCheck className="requirements-list-check-icon" />Возраст от 21 года</li>
-              <li><FaCheck className="requirements-list-check-icon" />Стаж В/У от 3 лет</li>
-              <li><FaCheck className="requirements-list-check-icon" />Страховка пассажиров</li>
-              <li><FaCheck className="requirements-list-check-icon" />Автомобиль от 2003 года</li>
-              <li><FaCheck className="requirements-list-check-icon" />Смартфон на Android</li>
+              {items.map(item => <li key={item.id}><FaCheck className="requirements-list-check-icon" />{item.title}</li>)}
             </ul>
             <button className="requirements-button" onClick={goToTop}>СТАТЬ ВОДИТЕЛЕМ</button>
           </div>
         </div>
-
-        <img src={Car2} alt="car2" />
+        <img src={CarTop} alt="car top" />
       </div>
     )
   }

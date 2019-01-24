@@ -1,10 +1,8 @@
 import React, { Component } from 'react'
 import axios from 'axios'
-
-import './content.css'
-
-import car from '../../img/car.png'
+import car from '../../img/car-front.png'
 import Background from '../../img/minsk.jpg'
+import './content.css'
 
 const backgroundImageStyle = {
   backgroundImage: `url(${Background})`,
@@ -28,13 +26,9 @@ export default class Content extends Component {
     this.handleSubmit = this.handleSubmit.bind(this)
   }
 
-  handleChangeName = event => {
-    this.setState({ name: event.target.value })
-  }
+  handleChangeName = event => this.setState({ name: event.target.value })
 
-  handleChangeNumber = event => {
-    this.setState({ number: event.target.value })
-  }
+  handleChangeNumber = event => this.setState({ number: event.target.value })
 
   handleSubmit = event => {
     event.preventDefault();

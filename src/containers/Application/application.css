@@ -41,8 +41,6 @@
   line-height: 24px;
 }
 
-/* react icons */
-
 .application-icon-container {
   display: flex;
   align-items: center;
@@ -54,7 +52,6 @@
   color: #ffcf29;
 }
 
-/* add to all text */
 .text-center {
   text-align: center;
 }

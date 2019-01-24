@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { Component } from 'react'
 
 import './application.css'
 
-import ApplicationImg from '../../../img/phone.png'
+import ApplicationImg from '../../img/phone.png'
 
 import { FaMoneyBillAlt } from 'react-icons/fa'
 import { FaListAlt } from 'react-icons/fa'
@@ -11,8 +11,7 @@ import { FaHandshake } from 'react-icons/fa'
 
 import ScrollableAnchor from 'react-scrollable-anchor'
 
-export default class Application extends React.Component {
-  
+export default class Application extends Component {
   render() {
     return (
       <div className="application-container">

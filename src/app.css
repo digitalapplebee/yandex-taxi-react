@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
 body {
   font-family: 'Open Sans', sans-serif;
+  font-family: 'Lato', sans-serif;
   overflow-x: hidden;
 }
 

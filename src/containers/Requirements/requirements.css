@@ -1,7 +1,7 @@
 .requirements-container {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  padding: 100px 0 100px 0;
+  display: flex;
+  
+  padding: 100px 0;
 }
 
 .requirements-label {
@@ -28,22 +28,20 @@
 }
 
 .requirements-button {
+  margin-top: 50px 0 0 50px;
+  padding: 20px 42px;
   font-size: 16px;
   font-weight: 600;
   letter-spacing: 1px;
-  padding: 20px 42px;
   border: none;
   border-radius: 30px;
   background-color: #ffdb4d;
-  margin-top: 50px;
-  margin-left: 50px;
   cursor: pointer;
 }
 
 .requirements-container img {
   height: 100%;
-  height: 100%;
   width: auto;
   max-width: none;
-  padding-left: 70px;
+  margin-left: 400px;
 }
