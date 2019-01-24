@@ -1,22 +1,16 @@
-body{
-  /* font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
+body {
   font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
 }
 
-p{
+p {
   margin: 0;
 }
 
 .app-container {
   background-image: url(./img/minsk.jpg);
-  /* background-size: cover; */
   background-repeat: no-repeat;
   background-color: #f7f7f7;
-  /* background: rgba(16, 16, 16, 0.178); */
-  /* filter: brightness(50%); */
-  /* z-index: -1; */
-
 }
 
 .app-container::after {

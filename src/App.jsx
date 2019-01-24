@@ -15,7 +15,6 @@ import './app.css'
 export default class App extends React.Component {
   render() {
     return (
-      // className="app-container"
       <div style={{zIndex: "5"}} >
         <Favicon url="https://raw.githubusercontent.com/digitalapplebee/yandex-taxi-react/master/src/img/favicon.ico" />
         <Header />
