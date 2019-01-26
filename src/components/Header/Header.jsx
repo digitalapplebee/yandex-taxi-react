@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import { goToTop } from 'react-scrollable-anchor';
-import ScrollableAnchor from 'react-scrollable-anchor/lib/ScrollableAnchor';
+import { goToTop } from 'react-scrollable-anchor'
+import Logo from '../Logo'
+import ScrollableAnchor from 'react-scrollable-anchor/lib/ScrollableAnchor'
 import { FaVk, FaFacebookF, FaTwitter } from 'react-icons/fa'
-
 import './header.css'
 
 export default class Header extends Component {
@@ -35,12 +35,7 @@ export default class Header extends Component {
     return (
       <div className={`${this.state.scrolling ? 'header-container-scrolled' : 'header-container'}`}>
         <ScrollableAnchor id={'home'}>
-          <p className="header-logo">
-            <span className="header-logo-yandex">
-              <span className="header-logo-y">Y</span>andex
-          </span>
-            <span className="header-logo-taxi">&nbsp;Taxi</span>
-          </p>
+          <Logo />
         </ScrollableAnchor>
         <nav className={`${this.state.scrolling ? 'nav-scrolled' : 'header-nav'}`}>
           <ul className={`${this.state.scrolling ? 'ul-t' : 'ul-scrolled'}`}>

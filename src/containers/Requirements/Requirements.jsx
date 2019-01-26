@@ -1,8 +1,9 @@
 import React from 'react'
-import TitleContainer from '../../components/TitleContainer'
-import CarTop from '../../img/car-top.png'
-import { FaCheck } from 'react-icons/fa'
 import ScrollableAnchor, { goToAnchor, configureAnchors, goToTop } from 'react-scrollable-anchor'
+import Button from '../../components/Button'
+import TitleContainer from '../../components/TitleContainer'
+import { FaCheck } from 'react-icons/fa'
+import CarTop from '../../img/car-top.png'
 import './requirements.css'
 
 const items = [
@@ -44,6 +45,7 @@ export default class Requirements extends React.Component {
             <ul>
               {items.map(item => <li key={item.id}><FaCheck className="requirements-list-check-icon" />{item.title}</li>)}
             </ul>
+            <Button title="СТАТЬ ВОДИТЕЛЕМ" scroll />
             <button className="requirements-button" onClick={goToTop}>СТАТЬ ВОДИТЕЛЕМ</button>
           </div>
         </div>

@@ -19,27 +19,6 @@
   z-index: 3;
 }
 
-.header-logo {
-  width: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 26px;
-  margin-left: 40px;
-}
-
-.header-logo-y {
-  color: red;
-}
-
-.header-logo-yandex{
-  color: white;
-  font-weight: 700;
-}
-
-.header-logo-taxi {
-  color: white;
-}
 
 .header-container li  {
   display: inline;

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Button from '../../components/Button'
 import axios from 'axios'
 import car from '../../img/car-front.png'
 import Background from '../../img/minsk.jpg'
@@ -32,7 +33,6 @@ export default class Content extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
-
     const data = {
       name: this.state.name,
       number: this.state.number
@@ -43,7 +43,6 @@ export default class Content extends Component {
         console.log(res)
         console.log(res.data)
       })
-
   }
 
   render() {
@@ -56,7 +55,7 @@ export default class Content extends Component {
             <input type="text" onChange={this.handleChangeNumber} placeholder="Номер телефона" />
           </div>
           <div className="content-button-center">
-            <button type="submit" className="content-button-submit">Отправить заявку</button>
+            <Button title="Отправить заявку"></Button>
           </div>
         </form>
         <p className="content-text-calling">или звоните</p>
