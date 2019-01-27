@@ -8,6 +8,8 @@ import Application from './containers/Application/Application'
 import Requriments from './containers/Requirements/Requirements'
 import Footer from './components/Footer'
 
+import Container from './components/Container'
+
 import 'normalize.css'
 import './app.css'
 
@@ -16,12 +18,14 @@ export default class App extends PureComponent {
     return (
       <Fragment>
         <Favicon url="https://raw.githubusercontent.com/digitalapplebee/yandex-taxi-react/master/src/img/favicon.ico" />
-        <Header />
-        <Content />
-        <Reason />
-        <Rates />
-        <Application />
-        <Requriments />
+        {/* <Container> */}
+          <Header />
+          <Content />
+          <Reason />
+          <Rates />
+          <Application />
+          <Requriments />
+        {/* </Container> */}
         <Footer />
       </Fragment>
     )

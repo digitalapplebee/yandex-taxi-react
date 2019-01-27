@@ -1,6 +1,7 @@
 .rates-container {
   border-bottom: 1px white solid;
   color: #707070;
+  background-color: #f5f5f5;
 }
 
 .rates-text-label {
@@ -12,7 +13,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 30px;
-  padding: 60px 100px;
+  padding: 60px 10%;
 
 }
 

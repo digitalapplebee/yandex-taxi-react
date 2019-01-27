@@ -18,3 +18,7 @@ p {
 .app-container::after {
   background-color: rgba(16,16,16,.8);
 }
+
+.text-center {
+  text-align: center;
+}

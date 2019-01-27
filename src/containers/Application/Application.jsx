@@ -1,22 +1,18 @@
 import React, { Component } from 'react'
 import TitleContainer from '../../components/TitleContainer'
-import './application.css'
-
-import ApplicationImg from '../../img/phone.png'
-
+import ScrollableAnchor from 'react-scrollable-anchor'
 import { FaMoneyBillAlt } from 'react-icons/fa'
 import { FaListAlt } from 'react-icons/fa'
 import { FaRedoAlt } from 'react-icons/fa'
 import { FaHandshake } from 'react-icons/fa'
-
-import ScrollableAnchor from 'react-scrollable-anchor'
+import ApplicationImg from '../../img/phone.png'
+import './application.css'
 
 export default class Application extends Component {
   render() {
     return (
       <div className="application-container">
         <ScrollableAnchor id={'application'}>
-          {/* <p id="#application" className="application-label text-center">Приложение</p> */}
           <TitleContainer title="Приложение" />
         </ScrollableAnchor>
         <div className="application-grid">

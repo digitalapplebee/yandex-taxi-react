@@ -46,7 +46,6 @@ export default class Requirements extends React.Component {
               {items.map(item => <li key={item.id}><FaCheck className="requirements-list-check-icon" />{item.title}</li>)}
             </ul>
             <Button title="СТАТЬ ВОДИТЕЛЕМ" scroll />
-            <button className="requirements-button" onClick={goToTop}>СТАТЬ ВОДИТЕЛЕМ</button>
           </div>
         </div>
         <img src={CarTop} alt="car top" />

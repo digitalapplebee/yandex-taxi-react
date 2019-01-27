@@ -1,4 +1,4 @@
-.button {
+.submit-button {
   width: 230px;
   height: 44px;
   font-weight: 600;
@@ -10,14 +10,20 @@
 }
 
 .button:hover {
-  /* border: 2px solid black; */
   background-color: rgb(255, 255, 0);
 }
 
-.submit-button {
-
+.requirements-button {
+  padding: 20px 42px;
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border: none;
+  border-radius: 30px;
+  background-color: #ffdb4d;
+  cursor: pointer;
 }
 
-.scroll-button {
-
+.center {
+  text-align: center;
 }

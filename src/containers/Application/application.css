@@ -1,6 +1,7 @@
 .application-container {
-  padding-bottom: 200px;
-  border-bottom: 1px gray solid;
+  padding-bottom: 100px;
+  /* background-color: rgb(245, 245, 245); */
+  /* border-bottom: 1px gray solid; */
 }
 
 .application-container img {
@@ -16,7 +17,7 @@
   display: grid;
   grid-template-columns: 1fr 300px 1fr;
   grid-gap: 30px;
-  margin: 0 50px 0 50px;
+  margin: 0 20px;
 }
 
 .application-grid-block {
@@ -29,7 +30,7 @@
 .application-grid-block-label {
   font-size: 16px;
   font-weight: 600;
-  padding: 20px;
+  padding: 10px;
   letter-spacing: 1px;
 }
 

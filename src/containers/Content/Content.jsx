@@ -55,7 +55,11 @@ export default class Content extends Component {
             <input type="text" onChange={this.handleChangeNumber} placeholder="Номер телефона" />
           </div>
           <div className="content-button-center">
-            <Button title="Отправить заявку"></Button>
+            <Button 
+              title="Отправить заявку" 
+              submit
+              center
+            />
           </div>
         </form>
         <p className="content-text-calling">или звоните</p>

@@ -1,6 +1,7 @@
 .reason-container {
-  margin-top: 260px;
-  padding: 20px 20px;
+  margin-top: 240px; 
+  /* 260 */
+  /* background-color: #f7f7f7; */
 }
 
 .reason-text-label {
@@ -15,11 +16,10 @@
   display: grid;
 }
 
-
 .reason-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  margin: 0 70px 0 70px;
+  margin: 0 70px;
   padding: 20px;
 }
 
@@ -46,6 +46,5 @@
 .reason-icon {
   font-size: 52px;
   color: #ffcf29;
-  align-content: center;
   text-align: center;
 }
