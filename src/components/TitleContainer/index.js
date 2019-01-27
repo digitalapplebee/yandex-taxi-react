@@ -4,7 +4,7 @@ import './title-container.css'
 export default class TitleContainer extends PureComponent {
   render() {
     return(
-      <p className="title-container">{this.props.title}</p>
+      <h2 className="title-container">{this.props.title}</h2>
     )
   }
 }

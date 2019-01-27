@@ -1,23 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
 body {
-  font-family: 'Open Sans', sans-serif;
   font-family: 'Lato', sans-serif;
   overflow-x: hidden;
 }
 
-p {
+p, h1, h2, h3 {
   margin: 0;
+  padding: 0;
 }
 
-.app-container {
-  background-image: url(./img/minsk.jpg);
-  background-repeat: no-repeat;
-  background-color: #f7f7f7;
-}
-
-.app-container::after {
-  background-color: rgba(16,16,16,.8);
-}
 
 .text-center {
   text-align: center;

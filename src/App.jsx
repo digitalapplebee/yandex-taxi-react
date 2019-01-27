@@ -18,14 +18,14 @@ export default class App extends PureComponent {
     return (
       <Fragment>
         <Favicon url="https://raw.githubusercontent.com/digitalapplebee/yandex-taxi-react/master/src/img/favicon.ico" />
-        {/* <Container> */}
-          <Header />
+        <Header />
           <Content />
+        <Container>
           <Reason />
           <Rates />
           <Application />
           <Requriments />
-        {/* </Container> */}
+        </Container>
         <Footer />
       </Fragment>
     )

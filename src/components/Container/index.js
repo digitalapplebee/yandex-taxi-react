@@ -1,17 +1,18 @@
-import React, { PureComponent } from 'react'
+import styled from 'styled-components'
 
-const styles = {
-  container: {
-    margin: '0 20%',
-  },
-}
+const Container = styled.div`
+  width: 100%;
+  margin: 0 auto;
 
-export default class Container extends PureComponent {
-  render() {
-    return (
-      <div style={styles.container}>
-
-      </div>
-    )
+  @media (max-width: 1240px) {
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-bot;
   }
-}
+
+  @media (max-width: 767px) {
+    width: 100%;
+    padding: 0 15px;
+  }
+`
+export default Container

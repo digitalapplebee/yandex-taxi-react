@@ -36,7 +36,9 @@
 
 .reason-text-description {
   text-align: center;
+  /* line-height: 24; */
   color: gray;
+  letter-spacing: 0.3px;
 }
 
 .reason-style-center {

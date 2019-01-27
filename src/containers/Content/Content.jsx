@@ -48,7 +48,7 @@ export default class Content extends Component {
   render() {
     return (
       <div className="content-container" style={backgroundImageStyle}>
-        <p className="content-text">Приглашаем водителей на автомобили организации для работы в Яндекс.Такси</p>
+        <h1 className="content-text">Приглашаем водителей на автомобили организации для работы в Яндекс.Такси</h1>
         <form onSubmit={this.handleSubmit} >
           <div className="content-submit-form">
             <input 
