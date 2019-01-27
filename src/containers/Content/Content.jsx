@@ -51,8 +51,16 @@ export default class Content extends Component {
         <p className="content-text">Приглашаем водителей на автомобили организации для работы в Яндекс.Такси</p>
         <form onSubmit={this.handleSubmit} >
           <div className="content-submit-form">
-            <input type="text" onChange={this.handleChangeName} placeholder="Ваше имя или фамилия" />
-            <input type="text" onChange={this.handleChangeNumber} placeholder="Номер телефона" />
+            <input 
+              type="text" 
+              onChange={this.handleChangeName} 
+              placeholder="Ваше имя или фамилия" 
+            />
+            <input 
+              type="text" 
+              onChange={this.handleChangeNumber}
+              placeholder="Номер телефона"
+            />
           </div>
           <div className="content-button-center">
             <Button 
@@ -63,8 +71,17 @@ export default class Content extends Component {
           </div>
         </form>
         <p className="content-text-calling">или звоните</p>
-        <a href="tel:+375333766580" className="content-text-number">+375 (33) 376-65-80</a>
-        <img className="content-img-car" src={car} alt="Yandex Car" />
+        <a 
+          href="tel:+375333766580" 
+          className="content-text-number"
+        >
+          +375 (33) 376-65-80
+        </a>
+        <img 
+          className="content-img-car" 
+          src={car} 
+          alt="Yandex Car" 
+        />
       </div>
     )
   }
