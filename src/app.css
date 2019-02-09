@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lato');
+
 body {
   font-family: 'Lato', sans-serif;
   overflow-x: hidden;
@@ -8,7 +9,6 @@ p, h1, h2, h3 {
   margin: 0;
   padding: 0;
 }
-
 
 .text-center {
   text-align: center;

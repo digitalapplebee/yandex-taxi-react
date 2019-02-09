@@ -12,7 +12,7 @@ const backgroundImageStyle = {
   backgroundSize: 'cover',
   backgroundPosition: 'center',
   zIndex: '-3',
-};
+}
 
 export default class Content extends Component {
   constructor(props) {
@@ -48,7 +48,9 @@ export default class Content extends Component {
   render() {
     return (
       <div className="content-container" style={backgroundImageStyle}>
-        <h1 className="content-text">Приглашаем водителей на автомобили организации для работы в Яндекс.Такси</h1>
+        <h1 className="content-text">
+          Приглашаем водителей на автомобили организации для работы в Яндекс.Такси
+        </h1>
         <form onSubmit={this.handleSubmit} >
           <div className="content-submit-form">
             <input 
@@ -63,23 +65,19 @@ export default class Content extends Component {
             />
           </div>
           <div className="content-button-center">
-            <Button 
-              title="Отправить заявку" 
-              submit
-              center
-            />
+            <Button>Отправить заявку</Button>
           </div>
         </form>
         <p className="content-text-calling">или звоните</p>
-        <a 
+        <a
           href="tel:+375333766580" 
           className="content-text-number"
         >
           +375 (33) 376-65-80
         </a>
         <img 
-          className="content-img-car" 
           src={car} 
+          className="content-img-car" 
           alt="Yandex Car" 
         />
       </div>

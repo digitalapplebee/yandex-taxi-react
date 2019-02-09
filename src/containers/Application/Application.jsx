@@ -12,7 +12,7 @@ export default class Application extends Component {
       <Container>
         <div className="application-container">
           <ScrollableAnchor id={'application'}>
-            <TitleContainer title="Приложение" />
+            <TitleContainer align="center">Приложение</TitleContainer>
           </ScrollableAnchor>
           <div className="application-grid">
             <div className="application-grid-block">

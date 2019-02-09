@@ -19,7 +19,7 @@ export default class Reason extends React.Component {
     return (
       <div className="reason-container">
         <ScrollableAnchor id={'reason'}>
-          <TitleContainer title="Почему Яндекс.Такси?" />
+          <TitleContainer align="center">Почему Яндекс.Такси?"</TitleContainer>
         </ScrollableAnchor>
         <div className="reason-grid">
           <div className="reason-block">

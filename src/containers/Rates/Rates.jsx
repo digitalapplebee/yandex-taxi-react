@@ -15,7 +15,7 @@ export default class Rates extends React.Component {
     return (
       <div className="rates-container">
         <ScrollableAnchor id={'rates'}>
-          <TitleContainer title="Тарифы" />
+          <TitleContainer align="center">Тарифы</TitleContainer>
         </ScrollableAnchor>
         <div className="rates-grid">
           <div className="rates-container-table">

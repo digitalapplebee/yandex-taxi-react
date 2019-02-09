@@ -1,7 +1,5 @@
 .reason-container {
-  margin-top: 240px; 
-  /* 260 */
-  /* background-color: #f7f7f7; */
+  margin-top: 260px; 
 }
 
 .reason-text-label {
@@ -36,7 +34,6 @@
 
 .reason-text-description {
   text-align: center;
-  /* line-height: 24; */
   color: gray;
   letter-spacing: 0.3px;
 }

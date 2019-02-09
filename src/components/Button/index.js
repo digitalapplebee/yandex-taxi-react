@@ -1,33 +1,21 @@
-import React, { Component } from 'react'
-import { goToTop } from 'react-scrollable-anchor'
-import './button.css'
+import styled from 'styled-components'
 
-export default class Button extends Component {
-  render() {
-    return (
-      <button 
-        className={this.props.submit ? 'submit-button' : 'requirements-button'}
-        onClick={this.props.scroll ? goToTop : ''}
-        // className={this.props.center ? 'center' : ''}
-      >
-        {this.props.title}
-      </button>
-    )
+const Button = styled.button`
+  width: 230px;
+  height: 44px;
+  font-weight: 600;
+  border-radius: 22px;
+  background-color: rgb(255, 255, 70);
+  border: none;
+  cursor: pointer;
+  transition: background-color: 0.3s ease-in;
+
+  :hover {
+    background-color: #ffff00;
   }
-}
 
-
-// const Button = ({children, fill, className, color, disabled, ...props}) => (
-//   <button
-//     disabled={disabled}
-//     className={`${className} ${st.button}` +
-//     `
-//       ${fill && st[`fill-${color || 'yellow'}`]}
-//       ${st[`${color || 'yellow'}`]}
-//       ${disabled && st.disabled}
-//     `}
-//     {...props}
-//   >
-//     <span>{children}</span>
-//   </button>
-// );
+  :active :focus {
+    outline: none;
+  }
+`
+export default Button
