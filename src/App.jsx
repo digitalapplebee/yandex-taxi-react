@@ -10,7 +10,7 @@ import Requriments from './containers/Requirements/Requirements'
 import Footer from './components/Footer/Footer'
 
 import 'normalize.css'
-import './app.css'
+import './styles/app.css'
 
 export default class App extends PureComponent {
   render() {

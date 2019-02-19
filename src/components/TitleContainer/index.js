@@ -7,4 +7,5 @@ const TitleContainer = styled.h2`
   padding: 30px 0;
   font-weight: 400;
 `
+
 export default TitleContainer

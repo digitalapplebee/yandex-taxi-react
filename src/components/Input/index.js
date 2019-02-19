@@ -1,14 +1,18 @@
-import React, { PureComponent } from 'react'
-import './input.css'
+import styled from 'styled-components'
 
-export default class Input extends PureComponent {
-  render() {
-    return (
-      <input 
-        type="text"
-        placeholder={this.props.placeholder} 
-        className="text-input"
-      />
-    )
+const Input = styled.input`
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  margin: 0 12px;
+  width: 400px;
+  font-size: 20px;
+  
+  ::placeholder {
+    color: #a8a8a8;
+    font-size: 0.80em;
+    padding-left: 7px;
   }
-}
+`
+
+export default Input

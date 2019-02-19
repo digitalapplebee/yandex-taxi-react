@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Button from '../../components/Button'
+import Input from '../../components/Input'
 import axios from 'axios'
 import car from '../../img/car-front.png'
 import Background from '../../img/minsk.jpg'
@@ -53,13 +54,11 @@ export default class Content extends Component {
         </h1>
         <form onSubmit={this.handleSubmit} >
           <div className="content-submit-form">
-            <input 
-              type="text" 
+            <Input 
               onChange={this.handleChangeName} 
               placeholder="Ваше имя или фамилия" 
             />
-            <input 
-              type="text" 
+            <Input
               onChange={this.handleChangeNumber}
               placeholder="Номер телефона"
             />

@@ -19,16 +19,6 @@
   font-size: 20px;
 }
 
-/* .content-submit-form > input[type=text]::before {
-  content: '2';
-} */
-
-.content-submit-form input[type=text]::placeholder {
-  color: #a8a8a8;
-  font-size: 0.80em;
-  padding-left: 7px;
-}
-
 .content-text {
   letter-spacing: 2px;
   font-size: 50px;
@@ -52,7 +42,6 @@
   font-size: 36px;
   color: #ffff46;
   font-weight: 600;
-  /* padding-bottom: 60px; */
   transition: color 0.4s ease-out;
 }
 
@@ -67,12 +56,6 @@
   margin-right: auto;
   margin-top: 80px;
   width: 65%;
-  /* position: relative;
-  top: 30px; */
-}
-
-.b-p {
-  /* padding: 100px 0; */
 }
 
 @media (max-width: 960px) {

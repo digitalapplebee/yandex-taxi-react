@@ -4,6 +4,7 @@ import Button from '../../components/Button'
 import TitleContainer from '../../components/TitleContainer'
 import { FaCheck } from 'react-icons/fa'
 import carTopImg from '../../img/car-top.png'
+
 import './requirements.css'
 
 const items = [
@@ -39,13 +40,18 @@ export default class Requirements extends React.Component {
       <div className="requirements-container">
         <div>
           <ScrollableAnchor id={'requirements'}>
-            <TitleContainer align="left">Условия работы и требования</TitleContainer>
+            <TitleContainer 
+              align="left"
+              className="requirements-title"
+            >
+              Условия работы и требования
+            </TitleContainer>
           </ScrollableAnchor>
           <div className="requirements-list-block">
             <ul>
               {items.map(item => <li key={item.id}><FaCheck className="requirements-list-check-icon" />{item.title}</li>)}
             </ul>
-            <Button onClick={goToTop}>СТАТЬ ВОДИТЕЛЕМ</Button>
+            <Button onClick={goToTop} requirement>СТАТЬ ВОДИТЕЛЕМ</Button>
           </div>
         </div>
         <img src={carTopImg} alt="car top" />
