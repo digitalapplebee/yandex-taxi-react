@@ -1,16 +1,11 @@
-import React from 'react'
-import TitleContainer from '../../components/TitleContainer'
+import React, { Component } from 'react'
 import { MdWallpaper } from 'react-icons/md'
-import { IoIosPeople } from 'react-icons/io'
-import { IoIosAirplane } from 'react-icons/io'
-import { IoMdDocument } from 'react-icons/io'
+import { IoIosPeople, IoIosAirplane, IoMdDocument } from 'react-icons/io'
+import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor'
+import TitleContainer from '../../components/TitleContainer'
+import './reason.css'
 
-import '../Reason/reason.css'
-
-import ScrollableAnchor, {configureAnchors} from 'react-scrollable-anchor'
-
-export default class Reason extends React.Component {
-
+export default class Reason extends Component {
   componentWillMount() {
     configureAnchors({ offset: -80, scrollDuration: 800 })
   }
@@ -18,7 +13,7 @@ export default class Reason extends React.Component {
   render() {
     return (
       <div className="reason-container">
-        <ScrollableAnchor id={'reason'}>
+        <ScrollableAnchor id="reason">
           <TitleContainer align="center">Почему Яндекс.Такси?"</TitleContainer>
         </ScrollableAnchor>
         <div className="reason-grid">

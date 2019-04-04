@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled, { css } from 'styled-components';
 
 const Button = styled.button`
   width: 230px;
@@ -10,7 +10,7 @@ const Button = styled.button`
   cursor: pointer;
   transition: background 0.3s ease-in;
 
-  ${props => props.requirement && css `
+  ${props => props.requirement && css`
     padding: 15px 42px;
     font-size: 16px;
     font-weight: 600;
@@ -29,6 +29,6 @@ const Button = styled.button`
   :active :focus {
     outline: none;
   }
-`
+`;
 
-export default Button
+export default Button;

@@ -14,7 +14,7 @@ import './styles/app.css'
 
 export default class App extends PureComponent {
   render() {
-    const faviconURL = "https://raw.githubusercontent.com/digitalapplebee/yandex-taxi-react/master/src/img/favicon.ico"
+    const faviconURL = 'https://raw.githubusercontent.com/digitalapplebee/yandex-taxi-react/master/src/img/favicon.ico'
 
     return (
       <Fragment>

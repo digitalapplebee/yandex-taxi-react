@@ -1,10 +1,10 @@
 .logo {
-  width: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 26px;
   margin-left: 40px;
+  font-size: 26px;
+  width: 200px;
 }
 
 .logo-y {

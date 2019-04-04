@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
-import { goToTop } from 'react-scrollable-anchor'
 import Logo from '../Logo'
-// import { IoMdMenu } from 'react-icons/io';
+import MenuIcon from '../../assets/menu.svg'
 import ScrollableAnchor from 'react-scrollable-anchor/lib/ScrollableAnchor'
 import { FaVk, FaFacebookF, FaTwitter } from 'react-icons/fa'
 import './header.css'
@@ -68,14 +67,9 @@ export default class Header extends Component {
             <li className={`${this.state.scrolling ? 'li-scrolled': ''}`}>
               <a href="#"><FaTwitter /></a>
             </li>
-            {/* <li>
-              <button 
-                type="button"
-                onClick={this.toggleMenu}
-              >
-                <IoMdMenu />
-              </button>
-            </li> */}
+            <li>
+                <img src={MenuIcon} className="menu-icon" alt="Menu" />
+            </li>
           </ul>
         </nav>
       </div>

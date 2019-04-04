@@ -1,5 +1,5 @@
-import React from "react"
-import styled from "styled-components"
+import React from 'react'
+import styled from 'styled-components'
 
 const Footer = styled.footer`
   display: flex;
@@ -9,7 +9,6 @@ const Footer = styled.footer`
   height: 80px;
   background-color: #f5f5f5;
 `
-
 const Text = styled.p`
   text-align: center;
   color: gray;

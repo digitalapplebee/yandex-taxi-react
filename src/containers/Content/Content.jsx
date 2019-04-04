@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Button from '../../components/Button'
-import Input from '../../components/Input'
+import Input from '../../components/InputText'
 import axios from 'axios'
 import car from '../../img/car-front.png'
 import Background from '../../img/minsk.jpg'
