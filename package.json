@@ -8,7 +8,7 @@
     "test": "echo \"No test specified\" && exit 0",
     "build": "webpack -p",
     "predeploy": "yarn run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -b master -d build"
   },
   "homepage": "https://digitalapplebee.github.io/yandex-taxi-react/",
   "keywords": [],
