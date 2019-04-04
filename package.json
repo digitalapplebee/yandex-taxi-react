@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --config ./webpack.config.js --mode development",
     "test": "echo \"No test specified\" && exit 0",
-    "build": "webpack -p",
+    "build": "webpack",
     "predeploy": "yarn run build",
     "deploy": "gh-pages -b master -d build"
   },
