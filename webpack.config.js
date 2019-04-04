@@ -50,7 +50,7 @@ module.exports = {
     extensions: ['*', '.js', '.jsx'],
   },
   output: {
-    path: `${__dirname}/build`,
+    path: `${__dirname}/dist`,
     publicPath: '/',
     filename: 'bundle.js',
   },

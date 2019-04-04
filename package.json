@@ -1,12 +1,12 @@
 {
   "name": "yandex-taxi-react",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server --config ./webpack.config.js --mode development",
     "test": "echo \"No test specified\" && exit 0",
-    "build": "webpack",
+    "build": "webpack -p",
     "predeploy": "yarn run build",
     "deploy": "gh-pages -b master -d build"
   },
