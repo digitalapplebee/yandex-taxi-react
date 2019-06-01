@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import Button from '../../components/Button'
 import Input from '../../components/InputText'
-import axios from 'axios'
 import car from '../../img/car-front.png'
 import Background from '../../img/minsk.jpg'
 import './content.css'
@@ -23,9 +22,9 @@ export default class Content extends Component {
       number: '',
     }
 
-    this.handleChangeName = this.handleChangeName.bind(this)
-    this.handleChangeNumber = this.handleChangeNumber.bind(this)
-    this.handleSubmit = this.handleSubmit.bind(this)
+    // this.handleChangeName = this.handleChangeName.bind(this)
+    // this.handleChangeNumber = this.handleChangeNumber.bind(this)
+    // this.handleSubmit = this.handleSubmit.bind(this)
   }
 
   handleChangeName = event => this.setState({ name: event.target.value })
@@ -34,16 +33,17 @@ export default class Content extends Component {
 
   handleSubmit = event => {
     event.preventDefault();
+    const { name, number } = this.state
     const data = {
-      name: this.state.name,
-      number: this.state.number
+      name: name,
+      number: number
     }
 
-    axios.post(`https://someaddress.com/user`, { data })
-      .then(res => {
-        console.log(res)
-        console.log(res.data)
-      })
+    fetch('https://someaddress.com/user', {
+      method: 'post',
+      body: data,
+    }).then(res => console.log(res))
+
   }
 
   render() {

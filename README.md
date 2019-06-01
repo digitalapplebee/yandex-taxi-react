@@ -4,3 +4,6 @@
 * `cd yandex-taxi-react`
 * `yarn && yarn start`
 * visit http://localhost:8080/
+
+
+https://yandex-taxi-react.netlify.com/

@@ -6,9 +6,7 @@
   "scripts": {
     "start": "webpack-dev-server --config ./webpack.config.js --mode development",
     "test": "echo \"No test specified\" && exit 0",
-    "build": "webpack -p",
-    "predeploy": "yarn run build",
-    "deploy": "gh-pages -b master -d build"
+    "build": "webpack -p"
   },
   "homepage": "https://digitalapplebee.github.io/yandex-taxi-react/",
   "keywords": [],
@@ -34,9 +32,7 @@
     "webpack-dev-server": "^3.2.0"
   },
   "dependencies": {
-    "axios": "^0.18.0",
     "babel-preset-env": "^1.7.0",
-    "gh-pages": "^2.0.1",
     "normalize.css": "^8.0.1",
     "prop-types": "^15.7.2",
     "react": "^16.8.2",
