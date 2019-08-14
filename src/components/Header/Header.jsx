@@ -5,6 +5,25 @@ import ScrollableAnchor from 'react-scrollable-anchor/lib/ScrollableAnchor'
 import { FaVk, FaFacebookF, FaTwitter } from 'react-icons/fa'
 import './header.css'
 
+const links = [
+  {
+    name: 'ПОЧЕМУ ЯНДЕКС.ТАКСИ?',
+    link: '#rates',
+  },
+  {
+    name: 'ТАРИФЫ',
+    link: '#application',
+  },
+  {
+    name: 'ПРИЛОЖЕНИЕ',
+    link: '#requiremets',
+  },
+  {
+    name: 'ПОДКЛЮЧИТЬСЯ?',
+    link: '#reason',
+  },
+]
+
 export default class Header extends Component {
   constructor(props) {
     super(props)
@@ -24,10 +43,11 @@ export default class Header extends Component {
   }
 
   handleScroll(event) {
-    if (window.scrollY === 0 && this.state.scrolling === true) {
+    const { scrolling } = this.state;
+    if (window.scrollY === 0 && scrolling === true) {
       this.setState({ scrolling: false });
     }
-    else if (window.scrollY !== 0 && this.state.scrolling !== true) {
+    else if (window.scrollY !== 0 && scrolling !== true) {
       this.setState({ scrolling: true });
     }
   }
@@ -39,32 +59,39 @@ export default class Header extends Component {
   }
 
   render() {
+    const { scrolling } = this.state
+    
     return (
-      <div className={`${this.state.scrolling ? 'header-container-scrolled' : 'header-container'}`}>
+      <div className={`${scrolling ? 'header-container-scrolled' : 'header-container'}`}>
         <ScrollableAnchor id={'home'}>
           <Logo />
         </ScrollableAnchor>
-        <nav className={`${this.state.scrolling ? 'nav-scrolled' : 'header-nav'}`}>
-          <ul className={`${this.state.scrolling ? 'ul-t' : 'ul-scrolled'}`}>
-            <li className={`${this.state.scrolling ? 'li-scrolled': ''}`}>
+        <nav className={`${scrolling ? 'nav-scrolled' : 'header-nav'}`}>
+          <ul className={`${scrolling ? 'ul-t' : 'ul-scrolled'}`}>
+            {
+              links.map(item => {
+                // <li className={`${scrolling ? ';;'}`}
+              })
+            }
+            <li className={`${scrolling ? 'li-scrolled': ''}`}>
               <a href="#reason">ПОЧЕМУ ЯНДЕСК.ТАКСИ?</a>
             </li>
-            <li className={`${this.state.scrolling ? 'li-scrolled': ''}`}>
+            <li className={`${scrolling ? 'li-scrolled': ''}`}>
               <a href="#rates">ТАРИФЫ</a>
             </li>
-            <li className={`${this.state.scrolling ? 'li-scrolled': ''}`}>
+            <li className={`${scrolling ? 'li-scrolled': ''}`}>
               <a href="#application">ПРИЛОЖЕНИЕ</a>
             </li>
-            <li className={`${this.state.scrolling ? 'li-scrolled': ''}`}>
+            <li className={`${scrolling ? 'li-scrolled': ''}`}>
               <a href="#requirements">ПОДКЛЮЧИТЬСЯ</a>
             </li>
-            <li className={`${this.state.scrolling ? 'li-scrolled': ''}`}>
+            <li className={`${scrolling ? 'li-scrolled': ''}`}>
               <a href="#"><FaVk /></a>
             </li>
-            <li className={`${this.state.scrolling ? 'li-scrolled': ''}`}>
+            <li className={`${scrolling ? 'li-scrolled': ''}`}>
               <a href="#"><FaFacebookF /></a>
             </li>
-            <li className={`${this.state.scrolling ? 'li-scrolled': ''}`}>
+            <li className={`${scrolling ? 'li-scrolled': ''}`}>
               <a href="#"><FaTwitter /></a>
             </li>
             <li>
