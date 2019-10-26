@@ -7,13 +7,13 @@ const Footer = styled.footer`
   flex-direction: column;
   width: 100%;
   height: 80px;
-  background-color: #f5f5f5;
+  background-color: #f0f0f0;
 `
 const Text = styled.p`
   text-align: center;
   color: gray;
   font-size: 13px;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   word-spacing: 1px;
   color: #707070;
   line-height: 22px;
@@ -28,11 +28,13 @@ const Text = styled.p`
   }
 `
 
-const Wrapper = () => {
+function Wrapper() {
   return (
     <Footer>
       <Text>© 2018 ООО «Inv» | УНП 185734586</Text>
-      <Text>Свидетельство о государственной регистрации 185734586 от 21.01.2018г.</Text>
+      <Text>
+        Свидетельство о государственной регистрации 185734586 от 21.01.2018г.
+      </Text>
     </Footer>
   )
 }
