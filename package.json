@@ -7,8 +7,8 @@
     "start": "webpack-dev-server --config ./webpack.config.js --mode development",
     "test": "echo \"No test specified\" && exit 0",
     "build": "webpack -p",
-    "lint": "eslint .",
-    "format": "prettier --write \"**/*.+(js|jsx|yml|yaml|css|md)\""
+    "lint": "eslint \"src/**/*.{js,jsx,css}\"",
+    "format": "prettier --write \"src/**/*.{js,jsx,css}\""
   },
   "homepage": "https://digitalapplebee.github.io/yandex-taxi-react/",
   "keywords": [],

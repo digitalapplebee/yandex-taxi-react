@@ -8,8 +8,8 @@ import {
 } from 'react-icons/fa'
 import TitleContainer from '../../components/TitleContainer'
 import Container from '../../components/Container'
-import ApplicationImg from '../../img/phone.png'
 import './application.css'
+import ApplicationImg from '../../img/phone.png'
 
 function Application() {
   return (
