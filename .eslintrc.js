@@ -3,7 +3,12 @@ module.exports = {
     browser: true,
     es6: true,
   },
-  extends: ['airbnb', 'prettier', 'prettier/react'],
+  extends: [
+    'airbnb',
+    'prettier',
+    'prettier/react',
+    'plugin:prettier/recommended',
+  ],
 
   globals: {
     Atomics: 'readonly',
@@ -19,6 +24,5 @@ module.exports = {
   plugins: ['react', 'prettier'],
   rules: {
     semi: 0,
-    'linebreak-style': ['error', 'windows'],
   },
 }
