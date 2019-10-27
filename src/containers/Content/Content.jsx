@@ -14,17 +14,10 @@ const backgroundImageStyle = {
   zIndex: '-3',
 }
 
-export default class Content extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      name: '',
-      number: '',
-    }
-
-    // this.handleChangeName = this.handleChangeName.bind(this)
-    // this.handleChangeNumber = this.handleChangeNumber.bind(this)
-    // this.handleSubmit = this.handleSubmit.bind(this)
+class Content extends Component {
+  state = {
+    name: '',
+    number: '',
   }
 
   handleChangeName = event => this.setState({ name: event.target.value })
@@ -32,31 +25,32 @@ export default class Content extends Component {
   handleChangeNumber = event => this.setState({ number: event.target.value })
 
   handleSubmit = event => {
-    event.preventDefault();
+    event.preventDefault()
     const { name, number } = this.state
     const data = {
-      name: name,
-      number: number
+      name,
+      number,
     }
 
     fetch('https://someaddress.com/user', {
       method: 'post',
       body: data,
+      // eslint-disable-next-line no-console
     }).then(res => console.log(res))
-
   }
 
   render() {
     return (
       <div className="content-container" style={backgroundImageStyle}>
         <h1 className="content-text">
-          Приглашаем водителей на автомобили организации для работы в Яндекс.Такси
+          Приглашаем водителей на автомобили организации для работы в
+          Яндекс.Такси
         </h1>
-        <form onSubmit={this.handleSubmit} >
+        <form onSubmit={this.handleSubmit}>
           <div className="content-submit-form">
-            <Input 
-              onChange={this.handleChangeName} 
-              placeholder="Ваше имя или фамилия" 
+            <Input
+              onChange={this.handleChangeName}
+              placeholder="Ваше имя или фамилия"
             />
             <Input
               onChange={this.handleChangeNumber}
@@ -68,18 +62,13 @@ export default class Content extends Component {
           </div>
         </form>
         <p className="content-text-calling">или звоните</p>
-        <a
-          href="tel:+375333766580" 
-          className="content-text-number"
-        >
+        <a href="tel:+375333766580" className="content-text-number">
           +375 (33) 376-65-80
         </a>
-        <img 
-          src={car} 
-          className="content-img-car" 
-          alt="Yandex Car" 
-        />
+        <img src={car} className="content-img-car" alt="Yandex Car" />
       </div>
     )
   }
 }
+
+export default Content

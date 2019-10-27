@@ -1,4 +1,5 @@
 module.exports = {
+  parser: 'babel-eslint',
   env: {
     browser: true,
     es6: true,
@@ -9,7 +10,7 @@ module.exports = {
     'prettier/react',
     'plugin:prettier/recommended',
   ],
-
+  plugins: ['react', 'prettier'],
   globals: {
     Atomics: 'readonly',
     SharedArrayBuffer: 'readonly',
@@ -21,7 +22,6 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
   },
-  plugins: ['react', 'prettier'],
   rules: {
     semi: 0,
   },

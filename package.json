@@ -43,6 +43,7 @@
     "webpack-dev-server": "^3.2.0"
   },
   "dependencies": {
+    "babel-eslint": "^10.0.3",
     "babel-preset-env": "^1.7.0",
     "lodash": "^4.17.15",
     "lodash.template": "^4.5.0",
