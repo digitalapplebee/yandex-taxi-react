@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const TitleContainer = styled.h2`
-  color: #000;
+  color: var(--black);
   font-size: 48px;
   text-align: ${props => props.align};
   padding: 30px 0;

@@ -6,11 +6,6 @@
   width: 300px;
 }
 
-/* .application-label {
-  font-size: 48px;
-  padding: 80px 0 60px 0;
-} */
-
 .application-grid {
   display: grid;
   grid-template-columns: 1fr 300px 1fr;
@@ -48,7 +43,7 @@
 
 .application-icon {
   font-size: 35px;
-  color: #ffcf29;
+  color: var(--yellow);
 }
 
 .text-center {

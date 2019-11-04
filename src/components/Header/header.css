@@ -11,7 +11,7 @@
 .header-container-scrolled {
   position: fixed;
   display: flex;
-  height: 70px; 
+  height: 70px;
   width: 100%;
   font-size: 13px;
   background-color: black;
@@ -19,8 +19,7 @@
   z-index: 3;
 }
 
-
-.header-container li  {
+.header-container li {
   display: inline;
   margin: 15px 15px 15px 15px;
 }
@@ -55,7 +54,6 @@
 .header-container a:visited {
   color: white;
 }
-
 
 a:visited {
   color: white;

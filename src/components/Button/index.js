@@ -5,6 +5,7 @@ const Button = styled.button`
   height: 44px;
   font-weight: 600;
   border-radius: 22px;
+  font-size: 22px;
   background: #ffff46;
   border: none;
   cursor: pointer;
@@ -13,23 +14,26 @@ const Button = styled.button`
   ${props =>
     props.requirement &&
     `
-      padding: 15px 42px;
-      font-size: 16px;
-      font-weight: 600;
-      letter-spacing: 1px;
-      border: none;
-      border-radius: 30px;
-      background-color: #ffdb4d;
-      cursor: pointer;
       width: 280px;
+      letter-spacing: 1px;
+
+      @media (max-width: 500px) {
+        font-size: 20px;
+      }
     `};
 
   :hover {
     background: #ffff00;
   }
 
-  :active :focus {
+  :active,
+  :focus {
     outline: none;
+  }
+
+  @media (max-width: 500px) {
+    font-size: 18px;
+    letter-spacing: 0;
   }
 `
 

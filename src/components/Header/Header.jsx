@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import ScrollableAnchor from 'react-scrollable-anchor/lib/ScrollableAnchor'
 import { FaVk, FaFacebookF, FaTwitter } from 'react-icons/fa'
 import Logo from '../Logo'
-import MenuIcon from '../../assets/menu.svg'
+// import MenuIcon from '../../assets/menu.svg'
 import './header.css'
 
 export default class Header extends Component {
@@ -51,36 +51,36 @@ export default class Header extends Component {
         </ScrollableAnchor>
         <nav className={`${scrolling ? 'nav-scrolled' : 'header-nav'}`}>
           <ul className={`${scrolling ? 'ul-t' : 'ul-scrolled'}`}>
-            <li className={`${scrolling ? 'li-scrolled' : ''}`}>
+            <li className={`${scrolling && 'li-scrolled'}`}>
               <a href="#reason">ПОЧЕМУ ЯНДЕСК.ТАКСИ?</a>
             </li>
-            <li className={`${scrolling ? 'li-scrolled' : ''}`}>
+            <li className={`${scrolling && 'li-scrolled'}`}>
               <a href="#rates">ТАРИФЫ</a>
             </li>
-            <li className={`${scrolling ? 'li-scrolled' : ''}`}>
+            <li className={`${scrolling && 'li-scrolled'}`}>
               <a href="#application">ПРИЛОЖЕНИЕ</a>
             </li>
-            <li className={`${scrolling ? 'li-scrolled' : ''}`}>
+            <li className={`${scrolling && 'li-scrolled'}`}>
               <a href="#requirements">ПОДКЛЮЧИТЬСЯ</a>
             </li>
-            <li className={`${scrolling ? 'li-scrolled' : ''}`}>
+            <li className={`${scrolling && 'li-scrolled'}`}>
               <a href="/">
                 <FaVk />
               </a>
             </li>
-            <li className={`${scrolling ? 'li-scrolled' : ''}`}>
+            <li className={`${scrolling && 'li-scrolled'}`}>
               <a href="/">
                 <FaFacebookF />
               </a>
             </li>
-            <li className={`${scrolling ? 'li-scrolled' : ''}`}>
+            <li className={`${scrolling && 'li-scrolled'}`}>
               <a href="/">
                 <FaTwitter />
               </a>
             </li>
-            <li>
+            {/* <li>
               <img src={MenuIcon} className="menu-icon" alt="Menu" />
-            </li>
+            </li> */}
           </ul>
         </nav>
       </div>

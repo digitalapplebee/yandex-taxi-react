@@ -10,7 +10,7 @@
   margin: 40px 0 20px 0;
 }
 
-.content-submit-form>input[type=text] {
+.content-submit-form > input[type='text'] {
   padding: 10px;
   border: none;
   border-radius: 4px;
@@ -46,7 +46,7 @@
 }
 
 .content-text-number:hover {
-  color: #e61400;
+  color: var(--red);
   cursor: pointer;
 }
 
@@ -62,10 +62,30 @@
   .content-img-car {
     width: 70%;
   }
+
+  .content-text {
+    font-size: 30px;
+    padding: 120px 10% 0 10%;
+  }
 }
 
 @media (max-width: 767px) {
   .content-img-car {
     width: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+  .content-submit-form {
+    flex-direction: column;
+  }
+
+  .content-submit-form > * {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .content-text-calling {
+    margin: 15px 0;
   }
 }

@@ -20,11 +20,11 @@ const Text = styled.p`
   letter-spacing: 0.01em;
 
   @media (max-width: 1240px) {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   @media (max-width: 767px) {
-    font-size: 10px;
+    font-size: 12px;
   }
 `
 

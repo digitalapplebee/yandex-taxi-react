@@ -1,12 +1,10 @@
 import React from 'react'
+import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor'
 import TitleContainer from '../../components/TitleContainer'
 
-import '../Rates/rates.css'
-
-import ScrollableAnchor, {configureAnchors} from 'react-scrollable-anchor'
+import './rates.css'
 
 export default class Rates extends React.Component {
-
   componentWillMount() {
     configureAnchors({ offset: -80, scrollDuration: 100 })
   }
@@ -14,7 +12,7 @@ export default class Rates extends React.Component {
   render() {
     return (
       <div className="rates-container">
-        <ScrollableAnchor id={'rates'}>
+        <ScrollableAnchor id="rates">
           <TitleContainer align="center">Тарифы</TitleContainer>
         </ScrollableAnchor>
         <div className="rates-grid">

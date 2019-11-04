@@ -10,19 +10,19 @@
 }
 
 .rates-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
   grid-gap: 30px;
   padding: 60px 10%;
-
 }
 
 .rates-table-label {
-  background-color: rgba(0, 0, 0, .7);
+  background-color: rgba(0, 0, 0, 0.7);
   font-size: 24px;
   color: white;
   text-align: center;
-  padding: 18px;
+  padding: 18px 0;
+  width: 460px;
 }
 
 .rates-container td {
@@ -35,7 +35,8 @@
 }
 
 .rates-container table {
-  width: 100%;
+  width: 460px;
+  margin-bottom: 20px;
 }
 
 .rates-container table,
@@ -53,4 +54,25 @@ td:first-child {
 .rates-container-table tbody {
   height: 100%;
   border: 0.01em solid #70707041;
+}
+
+@media (max-width: 989px) {
+  .rates-grid {
+    flex-direction: column;
+  }
+  .rates-table-label {
+    width: 100%;
+  }
+  .rates-container table {
+    width: 100%;
+  }
+  td:first-child {
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  td:first-child {
+    padding-right: 35px;
+  }
 }
