@@ -1,6 +1,6 @@
 {
   "name": "yandex-taxi-react",
-  "version": "1.2.6",
+  "version": "1.2.7",
   "description": "Application to search for employees in Yandex.Taxi",
   "main": "index.js",
   "scripts": {

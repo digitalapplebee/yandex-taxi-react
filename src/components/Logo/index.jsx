@@ -18,7 +18,7 @@ import styled from 'style-loader'
 const Logo = () => {
   return (
     <Container>
-    
+
     </Container>
   )
 }

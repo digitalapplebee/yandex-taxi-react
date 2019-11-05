@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components'
+import styled from 'styled-components'
 
 const Button = styled.button`
   width: 230px;
@@ -12,7 +12,7 @@ const Button = styled.button`
 
   ${props =>
     props.requirement &&
-    css`
+    `
       padding: 15px 42px;
       font-size: 16px;
       font-weight: 600;
