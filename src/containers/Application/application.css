@@ -35,12 +35,6 @@
   line-height: 20px;
 }
 
-.application-icon-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .application-icon {
   font-size: 35px;
   color: var(--yellow);

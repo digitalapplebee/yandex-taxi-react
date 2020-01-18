@@ -16,3 +16,9 @@ h3 {
 .text-center {
   text-align: center;
 }
+
+.block-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

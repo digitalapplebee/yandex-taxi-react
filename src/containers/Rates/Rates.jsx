@@ -1,6 +1,7 @@
 import React from 'react'
 import ScrollableAnchor, { configureAnchors } from 'react-scrollable-anchor'
 import TitleContainer from '../../components/TitleContainer'
+import { economy, comfort } from './data'
 
 import './rates.css'
 
@@ -20,22 +21,12 @@ export default class Rates extends React.Component {
             <p className="rates-table-label">Эконом</p>
             <table>
               <tbody>
-                <tr>
-                  <td>Минимальная стоимость (включено 0 мин и 2км)</td>
-                  <td>Не более 3,9р</td>
-                </tr>
-                <tr>
-                  <td>Бесплатное ожидание</td>
-                  <td>10 мин</td>
-                </tr>
-                <tr>
-                  <td>Платное ожидание (не включено в мин. стоимость)</td>
-                  <td>Не более 0,12 р./мин</td>
-                </tr>
-                <tr>
-                  <td>Далее по городу</td>
-                  <td>Не более 0,4 р./км</td>
-                </tr>
+                {economy.map(item => (
+                  <tr>
+                    <td>{item.description}</td>
+                    <td>{item.explanation}</td>
+                  </tr>
+                ))}
               </tbody>
             </table>
           </div>
@@ -44,22 +35,12 @@ export default class Rates extends React.Component {
             <p className="rates-table-label">Комфорт</p>
             <table>
               <tbody>
-                <tr>
-                  <td>Минимальная стоимость (включено 3 км)</td>
-                  <td>Не более 6 р.</td>
-                </tr>
-                <tr>
-                  <td>Бесплатное ожидание</td>
-                  <td>10 мин</td>
-                </tr>
-                <tr>
-                  <td>Платное ожидание (не включено в мин. стоимость)</td>
-                  <td>Не более 0,12 р./мин</td>
-                </tr>
-                <tr>
-                  <td>Далее по городу</td>
-                  <td>Не более 0,7 р./км</td>
-                </tr>
+                {comfort.map(item => (
+                  <tr>
+                    <td>{item.description}</td>
+                    <td>{item.explanation}</td>
+                  </tr>
+                ))}
               </tbody>
             </table>
           </div>

@@ -65,7 +65,7 @@ class Content extends Component {
         <a href="tel:+375333766580" className="content-text-number">
           +375 (33) 376-65-80
         </a>
-        <img src={car} className="content-img-car" alt="Yandex Car" />
+        <img src={car} className="content-img-car" alt="Машина Яндекс.Такси" />
       </div>
     )
   }

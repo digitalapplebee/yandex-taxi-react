@@ -21,7 +21,7 @@ function Application() {
         <div className="application-grid">
           <div className="application-grid-block">
             <div>
-              <div className="application-icon-container">
+              <div className="block-center">
                 <FaMoneyBillAlt className="application-icon" />
               </div>
               <h3 className="application-grid-block-label text-center">
@@ -33,7 +33,7 @@ function Application() {
               </p>
             </div>
             <div>
-              <div className="application-icon-container">
+              <div className="block-center">
                 <FaListAlt className="application-icon" />
               </div>
               <h3 className="application-grid-block-label text-center">
@@ -48,7 +48,7 @@ function Application() {
           <img src={ApplicationImg} alt="Application" />
           <div className="application-grid-block">
             <div>
-              <div className="application-icon-container">
+              <div className="block-center">
                 <FaRedoAlt className="application-icon" />
               </div>
               <h3 className="application-grid-block-label text-center">
@@ -60,7 +60,7 @@ function Application() {
               </p>
             </div>
             <div>
-              <div className="application-icon-container">
+              <div className="block-center">
                 <FaHandshake className="application-icon" />
               </div>
               <h3 className="application-grid-block-label text-center">
