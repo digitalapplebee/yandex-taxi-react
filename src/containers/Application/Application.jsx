@@ -1,5 +1,4 @@
 import React from 'react'
-import ScrollableAnchor from 'react-scrollable-anchor'
 import {
   FaMoneyBillAlt,
   FaListAlt,
@@ -15,9 +14,7 @@ function Application() {
   return (
     <Container>
       <div className="application-container">
-        <ScrollableAnchor id="application">
-          <TitleContainer align="center">Приложение</TitleContainer>
-        </ScrollableAnchor>
+        <TitleContainer align="center">Приложение</TitleContainer>
         <div className="application-grid">
           <div className="application-grid-block">
             <div>
