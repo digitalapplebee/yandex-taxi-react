@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import ScrollableAnchor from 'react-scrollable-anchor/lib/ScrollableAnchor'
 import { FaVk, FaFacebookF, FaTwitter } from 'react-icons/fa'
 import Logo from '../Logo'
 // import MenuIcon from '../../assets/menu.svg'
@@ -46,9 +45,7 @@ export default class Header extends Component {
           scrolling ? 'header-container-scrolled' : 'header-container'
         }`}
       >
-        <ScrollableAnchor id="home">
-          <Logo />
-        </ScrollableAnchor>
+        <Logo />
         <nav className={`${scrolling ? 'nav-scrolled' : 'header-nav'}`}>
           <ul className={`${scrolling ? 'ul-t' : 'ul-scrolled'}`}>
             <li className={`${scrolling && 'li-scrolled'}`}>
