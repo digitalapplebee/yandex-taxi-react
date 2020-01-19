@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import Button from '../../components/Button'
-import Input from '../../components/InputText'
-import car from '../../img/car-front.png'
-import Background from '../../img/minsk.jpg'
+import Button from 'components/Button'
+import Input from 'components/InputText'
+import car from 'assets/images/car-front.png'
+import Background from 'assets/images/minsk.jpg'
 import './content.css'
 
 const backgroundImageStyle = {

@@ -1,4 +1,5 @@
 const webpack = require('webpack')
+const path = require('path')
 
 module.exports = {
   entry: ['react-hot-loader/patch', './src/index.jsx'],
@@ -45,6 +46,14 @@ module.exports = {
   },
   resolve: {
     extensions: ['*', '.js', '.jsx'],
+    alias: {
+      assets: path.resolve(__dirname, 'src/assets'),
+      components: path.resolve(__dirname, 'src/components'),
+      constants: path.resolve(__dirname, 'src/constants'),
+      containers: path.resolve(__dirname, 'src/containers'),
+      style: path.resolve(__dirname, 'src/style'),
+      img: path.resolve(__dirname, 'src/img'),
+    },
   },
   output: {
     path: `${__dirname}/dist`,

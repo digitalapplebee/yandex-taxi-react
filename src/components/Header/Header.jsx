@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { FaVk, FaFacebookF, FaTwitter } from 'react-icons/fa'
 import Logo from '../Logo'
-// import MenuIcon from '../../assets/menu.svg'
+// import MenuIcon from 'assets/svg/menu.svg'
 import './header.css'
 
 export default class Header extends Component {

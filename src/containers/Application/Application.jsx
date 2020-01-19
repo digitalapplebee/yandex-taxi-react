@@ -5,10 +5,10 @@ import {
   FaRedoAlt,
   FaHandshake,
 } from 'react-icons/fa'
-import TitleContainer from '../../components/TitleContainer'
-import Container from '../../components/Container'
+import TitleContainer from 'components/TitleContainer'
+import Container from 'components/Container'
 import './application.css'
-import ApplicationImg from '../../img/phone.png'
+import ApplicationImg from 'assets/images/phone.png'
 
 function Application() {
   return (

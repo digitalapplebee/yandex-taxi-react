@@ -1,5 +1,5 @@
 import React from 'react'
-import TitleContainer from '../../components/TitleContainer'
+import TitleContainer from 'components/TitleContainer'
 import { economy, comfort } from './data'
 
 import './rates.css'
