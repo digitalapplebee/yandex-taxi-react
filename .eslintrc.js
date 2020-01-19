@@ -25,4 +25,11 @@ module.exports = {
   rules: {
     semi: 0,
   },
+  settings: {
+    'import/resolver': {
+      webpack: {
+        config: 'webpack.config.js',
+      },
+    },
+  },
 }

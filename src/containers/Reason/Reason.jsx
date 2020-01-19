@@ -1,7 +1,7 @@
 import React from 'react'
 import { MdWallpaper } from 'react-icons/md'
 import { IoIosPeople, IoIosAirplane, IoMdDocument } from 'react-icons/io'
-import TitleContainer from '../../components/TitleContainer'
+import TitleContainer from 'components/TitleContainer'
 
 import './reason.css'
 

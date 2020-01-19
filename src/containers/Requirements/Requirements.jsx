@@ -1,8 +1,8 @@
 import React from 'react'
 import { FaCheck } from 'react-icons/fa'
-import Button from '../../components/Button'
-import TitleContainer from '../../components/TitleContainer'
-import carTopImg from '../../img/car-top.png'
+import carTopImg from 'assets/images/car-top.png'
+import Button from 'components/Button'
+import TitleContainer from 'components/TitleContainer'
 import data from './data'
 
 import './requirements.css'
