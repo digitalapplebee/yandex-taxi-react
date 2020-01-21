@@ -6,13 +6,13 @@ const Container = styled.div`
 
   @media (max-width: 1240px) {
     width: 100%;
-    padding: 0 20px;
-    box-sizing: border-bot;
+    /* padding: 0 20px; */
+    /* box-sizing: border-bot; */
   }
 
   @media (max-width: 767px) {
     width: 100%;
-    padding: 0 15px;
+    /* padding: 0 15px; */
   }
 `
 export default Container
