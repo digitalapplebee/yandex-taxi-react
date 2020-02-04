@@ -13,7 +13,7 @@
   display: flex;
   justify-content: space-between;
   grid-gap: 30px;
-  padding: 60px 10%;
+  padding: 60px 7%;
 }
 
 .rates-table-label {
@@ -22,7 +22,6 @@
   color: white;
   text-align: center;
   padding: 18px 0;
-  width: 460px;
 }
 
 .rates-container td {
@@ -35,7 +34,7 @@
 }
 
 .rates-container table {
-  width: 460px;
+  width: 700;
   margin-bottom: 20px;
 }
 
@@ -46,8 +45,8 @@ th {
 }
 
 td:first-child {
-  max-width: 110px;
-  padding-right: 80px;
+  max-width: 180px;
+  padding-right: 70px;
   height: 100%;
 }
 
@@ -56,7 +55,42 @@ td:first-child {
   border: 0.01em solid #70707041;
 }
 
-@media (max-width: 989px) {
+/* =============== media =============== */
+
+@media (max-width: 1920px) {
+  .rates-container table {
+    width: 700px;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 1800px) {
+  .rates-container table {
+    width: 680px;
+  }
+
+  .rates-grid {
+    padding: 60px 5%;
+  }
+}
+
+@media (max-width: 1550px) {
+  .rates-container table {
+    width: 500px;
+  }
+
+  .rates-grid {
+    padding: 60px 10%;
+  }
+}
+
+@media (max-width: 1300px) {
+  .rates-grid {
+    padding: 60px 5%;
+  }
+}
+
+@media (max-width: 1180px) {
   .rates-grid {
     flex-direction: column;
   }
@@ -74,5 +108,9 @@ td:first-child {
 @media (max-width: 500px) {
   td:first-child {
     padding-right: 35px;
+  }
+
+  .rates-grid {
+    padding: 20px 5%;
   }
 }

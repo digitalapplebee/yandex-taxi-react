@@ -2,7 +2,6 @@ import React, { Fragment, PureComponent } from 'react'
 import Favicon from 'react-favicon'
 import Header from './components/Header/Header'
 import Content from './containers/Content/Content'
-import Container from './components/Container'
 import Reason from './containers/Reason/Reason'
 import Rates from './containers/Rates/Rates'
 import Application from './containers/Application/Application'
@@ -22,12 +21,12 @@ export default class App extends PureComponent {
         <Favicon url={faviconURL} />
         <Header />
         <Content />
-        <Container>
+        <div>
           <Reason />
           <Rates />
           <Application />
           <Requriments />
-        </Container>
+        </div>
         <Footer />
       </Fragment>
     )
