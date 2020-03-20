@@ -36,6 +36,7 @@
   text-align: center;
   color: gray;
   letter-spacing: 0.3px;
+  padding: 0 5px;
 }
 
 .reason-style-center {
@@ -46,4 +47,34 @@
   font-size: 52px;
   color: #ffcf29;
   text-align: center;
+}
+
+@media (max-width: 1200px) {
+  .reason-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 50px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 800px) {
+  .reason-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 30px;
+    padding: 20px;
+  }
+
+  .reason-icon {
+    margin-top: 30px;
+  }
+
+  .reason-text-grid-label {
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+    padding-top: 0;
+    padding-bottom: 10px;
+  }
 }
