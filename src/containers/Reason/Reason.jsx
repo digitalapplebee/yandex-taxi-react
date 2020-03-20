@@ -16,7 +16,7 @@ function Reason() {
           </div>
           <h3 className="reason-text-grid-label">Навигация</h3>
           <p className="reason-text-description">
-            В программе имеется встроенный &quotЯндекс.Навигатор&quot, который
+            В программе имеется встроенный &quot;Яндекс.Навигатор&quot;, который
             помогает водителям быстрее добраться до цели.
           </p>
         </div>
