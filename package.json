@@ -55,7 +55,7 @@
     "react-favicon": "^0.0.17",
     "react-hot-loader": "^4.12.15",
     "react-icons": "^3.8.0",
-    "serialize-javascript": "^2.1.2",
+    "serialize-javascript": "^4.0.0",
     "styled-components": "^4.4.0"
   },
   "husky": {
